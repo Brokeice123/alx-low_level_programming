@@ -6,7 +6,7 @@
 * main - Executes the fibonacci_sequence function.
 **/
 
-void fibonacci_sequence(n = 50)
+void fibonacci_sequence((n) = 50)
 {
 	int first = 1;
 	int second = 2;

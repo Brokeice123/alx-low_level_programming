@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
-* fibonacci_sequence - Prints the first 50 Fibonacci numbers
+* fibonacci_sequence - function that prints the first 50  Fibonacci series
+* @n: Value used in main
+*
 **/
 
-void fibonacci_sequence(void)
+void fibonacci_sequence(int n)
 {
-	int times = 50;
 	int first = 1;
 	int second = 2;
 	int next;
@@ -14,7 +15,7 @@ void fibonacci_sequence(void)
 
 	printf("%d, %d", first, second);
 
-	for (; i < times; i++)
+	for (; i < n; i++)
 	{
 		next = first + second;
 		printf(", %d", next);
@@ -25,3 +26,13 @@ void fibonacci_sequence(void)
 	printf("\n");
 }
 
+/**
+ *main - calls the function fibonacci_sequence
+ *Return: 0 when successfull
+ **/
+
+int main(void)
+{
+	fibonacci_sequence(50);
+	return (0);
+}

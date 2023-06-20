@@ -15,7 +15,7 @@ void fibonacci_sequence(int n)
 
 	printf("%d, %d", first, second);
 
-	for (; i <= n; i++)
+	for (; i < n; i++)
 	{
 		next = first + second;
 		printf(", %d", next);

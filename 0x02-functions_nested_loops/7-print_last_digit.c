@@ -3,14 +3,14 @@
 /**
  * print_last_digit - Prints the last digit of a number
  *
- * @int: The number being tested.
+ * @n: The number being tested.
  *
  * Return: The value of the last digit
 **/
 
-int print_last_digit(int)
+int print_last_digit(int n)
 {
-	int last_digit = int % 10;
+	int last_digit = n % 10;
 
 	return (last_digit);
 }

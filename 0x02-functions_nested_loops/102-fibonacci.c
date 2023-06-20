@@ -6,7 +6,7 @@
 * main - Executes the fibonacci_sequence function.
 **/
 
-void fibonacci_sequence(50)
+void fibonacci_sequence(n = 50)
 {
 	int first = 1;
 	int second = 2;
@@ -15,7 +15,7 @@ void fibonacci_sequence(50)
 
 	printf("%d, %d", first, second);
 
-	for (; i < 50; i++)
+	for (; i < n; i++)
 	{
 		next = first + second;
 		printf(", %d", next);

@@ -33,6 +33,8 @@ void fibonacci_sequence(int n)
 
 int main(void)
 {
-	fibonacci_sequence(50);
+	int n = 50;
+
+	fibonacci_sequence(n);
 	return (0);
 }

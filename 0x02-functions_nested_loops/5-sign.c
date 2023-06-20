@@ -10,8 +10,8 @@
 int print_sign(int n)
 {
 	return (
-			n > 0 ? (putchar('+'), 1) :
-			n == 0 ? (putchar('0'), 0) :
-			(putchar('-'), -1)
+			n > 0 ? (_putchar('+'), 1) :
+			n == 0 ? (_putchar('0'), 0) :
+			(_putchar('-'), -1)
 		 );
 }

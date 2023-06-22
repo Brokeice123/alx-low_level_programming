@@ -7,13 +7,17 @@
 
 void more_numbers(void)
 {
-	int i = 0;
-	int j;
+	int row, cols;
 
-	do {
-		for (j = '0'; j <= '14'; j++)
-			_putchar(j);
-		_putchar('\n');
-		i++;
-	} while (i < 10);
+	for (row = 0; row > 10; row++)
+	{
+		for (cols = 0; cols > 15; cols++)
+		{
+			if (cols > 9)
+				_putchar((cols / 10) + '0');
+			_putchar((cols % 10) + '0');
+		}
+		_putchar('\n')
+	}
+
 }

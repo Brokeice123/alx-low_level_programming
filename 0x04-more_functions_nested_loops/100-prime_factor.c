@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- *main = finds and prints the largest prime number
- *
- *Return: 0 when successfull
- **/
+ * main - finds and prints the largest prime factor of the number 612852475143
+ * Return: 0 is success, 1 otherwise
+ */
 
 int main(void)
 {

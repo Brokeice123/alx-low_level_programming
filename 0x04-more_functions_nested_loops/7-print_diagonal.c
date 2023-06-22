@@ -21,5 +21,6 @@ void print_diagonal(int n)
 		for (col = 0; col < row; col++)
 			_putchar(32);
 		_putchar(92);
+		_putchar(10);
 	}
 }

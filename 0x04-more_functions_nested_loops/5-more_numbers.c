@@ -9,15 +9,14 @@ void more_numbers(void)
 {
 	int row, cols;
 
-	for (row = 0; row > 10; row++)
+	for (row = 0; row < 10; row++)
 	{
-		for (cols = 0; cols > 15; cols++)
+		for (cols = 0; cols <= 14; cols++)
 		{
 			if (cols > 9)
 				_putchar((cols / 10) + '0');
 			_putchar((cols % 10) + '0');
 		}
-		_putchar('\n')
+	_putchar('\n');
 	}
-
 }

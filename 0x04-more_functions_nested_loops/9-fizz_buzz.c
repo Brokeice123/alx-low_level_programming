@@ -28,6 +28,5 @@ int main(void)
 			printf("%d ", n);
 		}
 	}
-	putchar(10);
 	return (0);
 }

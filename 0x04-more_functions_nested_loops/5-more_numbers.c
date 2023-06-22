@@ -15,5 +15,5 @@ void more_numbers(void)
 			_putchar(j);
 		_putchar('\n');
 		i++;
-	} while (i < 10)
+	} while (i < 10);
 }

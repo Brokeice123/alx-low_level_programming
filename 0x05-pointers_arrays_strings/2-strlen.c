@@ -11,7 +11,7 @@ int _strlen(char *s)
 	unsigned int len = 0;
 	int i;
 
-	for (i = 0; *(s + i) != '/0'; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 		len += sizeof(char);
 
 	return (len);

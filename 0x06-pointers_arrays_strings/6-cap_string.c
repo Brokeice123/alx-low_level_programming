@@ -2,11 +2,11 @@
 
 /**
  *cap_string - Capitalizes all words of a string
- *@str: String to be Capitalized
- *Return: str
+ *@s: String to be Capitalized
+ *Return: s
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i = 0, flag = 1;
 

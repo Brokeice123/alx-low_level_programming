@@ -49,6 +49,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *conc;
 	unsigned int len1, len2;
 
+	if (s1 == NUll)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 

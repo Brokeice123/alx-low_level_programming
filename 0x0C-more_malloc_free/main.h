@@ -8,5 +8,6 @@ int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int _strlen(char *s);
+char *_memset(char *s, char b, unsigned int n);
 
 #endif

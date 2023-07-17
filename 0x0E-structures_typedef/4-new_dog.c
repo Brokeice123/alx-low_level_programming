@@ -1,5 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
+#include "1-strdup.c"
+
 
 /**
  *new_dog - Pointer to the struct dog_t
@@ -11,16 +13,16 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
+	dog_t *dog;
 
-	new_dog = malloc(sizeof(dog_t));
+	dog = malloc(sizeof(dog_t));
 
-	if (new_dog == NULL)
+	if (dog == NULL)
 		return (NULL);
 
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->owner = owner;
+	dog->name = _strdup(name);
+	dog->age = age;
+	dog->owner = _strdup(owner);
 
-	return (new_dog);
+	return (dog);
 }

@@ -27,19 +27,17 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
-	for (i = 0; i < index - 1; i++)
+	for (i = 0; i < index; i++)
 	{
-		if (tmp == NULL)
+		if (tmp->next == NULL)
 			return (-1);
 
 		tmp = tmp->next;
 	}
 
-	if (tmp->next == NULL)
-		return (-1);
-
 	tmp->prev->next = tmp->next;
-	tmp->next->prev = tmp->prev;
+	if (tmp->next != NULL)
+		tmp->next->prev = tmp->prev;
 	free(tmp);
 	return (1);
 }

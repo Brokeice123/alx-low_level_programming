@@ -7,7 +7,7 @@
  * Return: number of nodes
  */
 
-size_t sum_dlistint(dlistint_t *head)
+int sum_dlistint(dlistint_t *head)
 {
 	size_t nodes = 0;
 

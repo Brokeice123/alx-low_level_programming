@@ -3,5 +3,5 @@ SCR = main.c school.c
 OBJ = $(SCR:.c=.o)
 NAME = school
 
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all: $(NAME)
+	$(CC) -o $(NAME) $(OBJ)
